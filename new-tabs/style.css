@@ -1,0 +1,24 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-color: #222;
+    margin: 0px;
+    overflow: hidden;
+  }
+
+  #tittle {
+    color: whitesmoke;
+    font-size: 32x;
+    list-style-type: none;
+    padding: none;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: bold;
+  }
+
+#wrapper {
+    aspect-ratio: 1.618;
+    width: 90vmin;
+    position: relative;
+  }
