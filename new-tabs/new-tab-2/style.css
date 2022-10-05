@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round:400,700');
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    user-select: none;
+}
+
+body {
+    font: 300 70px/1 'Open Sans';
+    color: #d9d9d9;
+    background: #2a2b2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#date {
+    font-size: 35px;
+    margin-bottom: 30px;
+    display: flex;
+    font-family: 'Ubuntu Mono';
+    color: #bdbdbd;
+    font-style: italic;
+}
+
+#greeting {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 45px 0px 60px 0px;
+    font-family: 'Varela Round' !important;
+    color: #f5f5f5;
+}
+
+#dot {
+    color: #ffe084;
+    margin: 0px 5px;
+}
+
+#slash {
+    color: #ffb6b9;
+}
+
+#chrome {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+a {
+    color: inherit;
+}
+
+.clock {
+    width: 350px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.clock span {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+}
+
+.clock span:nth-child(2) {
+    border-right: 2px solid#ff7c7c;
+    margin-right: 10px;
+    width: 60px;
+    text-align: left;
+}
+
+.clock span:nth-child(4) {
+    border-right: 2px solid#8deaff;
+    margin-right: 10px;
+    width: 60px;
+    text-align: left;
+}
+
+.clock span:nth-child(6) {
+    text-align: left;
+}
+
+.clock span:before,
+.clock span:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+    transition: transform 0.75s;
+}
+
+.clock span:before {
+    content: attr(data-old);
+    z-index: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.clock .flip:before {
+    transform: translate3d(0, 102.5%, 0);
+}
+
+.clock span:after {
+    content: attr(data-now);
+    z-index: 2;
+    transform: translate3d(0, -102.5%, 0);
+}
+
+.clock .flip:after {
+    transform: translate3d(0, 0, 0);
+}
+
+.clock-container {
+    padding: 20px 15px;
+    border-radius: 5px;
+    border: 1px solid #bdbdbd;
+    box-shadow: 5px 5px 15px #000;
+    background-color: transparent;
+}
