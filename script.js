@@ -59,7 +59,7 @@ const animate = (text) => {
 
 test1.addEventListener("mouseover", function (event) {
   //highlight the mouseover target
-  animate("New Tab Pages")
+  animate("Game Engine")
 }, false);
 
 test1.addEventListener("mouseout", function (event) {
@@ -73,7 +73,7 @@ let test2 = document.getElementById("shape2");
 
 test2.addEventListener("mouseover", function (event) {
   //highlight the mouseover target
-  animate("hello2")
+  animate("Genesis")
 }, false);
 
 test2.addEventListener("mouseout", function (event) {
@@ -87,7 +87,7 @@ let test3 = document.getElementById("shape3");
 
 test3.addEventListener("mouseover", function (event) {
   //highlight the mouseover target
-  animate("hello3")
+  animate("Other")
 }, false);
 
 test3.addEventListener("mouseout", function (event) {
@@ -101,7 +101,7 @@ let test4 = document.getElementById("shape4");
 
 test4.addEventListener("mouseover", function (event) {
   //highlight the mouseover target
-  animate("hello4")
+  animate("To Do List")
 }, false);
 
 test4.addEventListener("mouseout", function (event) {
@@ -116,7 +116,7 @@ let test5 = document.getElementById("shape5");
 
 test5.addEventListener("mouseover", function (event) {
   //highlight the mouseover target
-  animate("hello5")
+  animate("Vocab definition finder")
 }, false);
 
 test5.addEventListener("mouseout", function (event) {
@@ -130,7 +130,7 @@ let test6 = document.getElementById("shape6");
 
 test6.addEventListener("mouseover", function (event) {
   //highlight the mouseover target
-  animate("hello6")
+  animate("New Tabs")
 }, false);
 
 test6.addEventListener("mouseout", function (event) {
@@ -144,7 +144,7 @@ let test7 = document.getElementById("shape7");
 
 test7.addEventListener("mouseover", function (event) {
   //highlight the mouseover target
-  animate("hello7")
+  animate("Periodtimer")
 }, false);
 
 test7.addEventListener("mouseout", function (event) {
