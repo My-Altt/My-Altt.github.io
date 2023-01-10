@@ -1,0 +1,51 @@
+/* (A) SHARED */
+body{
+    background: #222;
+}
+#todo-wrap, #todo-wrap * {
+    color: rgb(255,213,205);    
+  box-sizing: *;
+}
+#todo-wrap input, .todo-item {
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* (B) WRAPPER */
+#todo-wrap {
+  background: #121212;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* (C) HEADER */
+#todo-wrap h1 { margin: 10px 0; }
+
+/* (D) ROW ITEMS */
+#todo-add, .todo-row {
+  display: flex;
+  align-items: center;
+}
+#todo-item, .todo-item {
+  flex-grow: 1;
+  background:  #222;
+}
+.todo-item.todo-ok { background: #cffff4; }
+#todo-save, .todo-del, .todo-done {
+  color: #fff;
+  cursor: pointer;
+}
+.todo-del { background: #121212; }
+#todo-save, .todo-done { background: #121212; }
+
+li {
+    font-size: 16px;
+  list-style-type: none;
+  padding: 5px;
+  font-family: 'Raleway', sans-serif;
+  /* font-weight: bold; */
+  color: rgb(255,213,205);
+}
